@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TargetActionComponentA_Example' do
+  pod 'TargetActionComponentA', :path => '../'
+
+  target 'TargetActionComponentA_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
