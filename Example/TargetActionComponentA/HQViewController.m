@@ -7,7 +7,8 @@
 //
 
 #import "HQViewController.h"
-
+#import <CTMediator/CTMediator.h>
+#import <TargetActionComponentA/CTMediator+ComponentA.h>
 @interface HQViewController ()
 
 @end
@@ -18,6 +19,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [super touchesBegan:touches withEvent:event];
+    
+    UIViewController *vc = [[CTMediator sharedInstance] fetchComponentAVCWithSource:@"ProjectA"];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
