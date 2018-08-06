@@ -9,4 +9,7 @@
 
 @interface TAentryADetailVC : UIViewController
 
+@property(copy,nonatomic) NSString *sourceId;
+@property(copy,nonatomic) void(^finishBlock)(NSDictionary *info);
+
 @end

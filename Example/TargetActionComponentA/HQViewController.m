@@ -26,8 +26,10 @@
 {
     [super touchesBegan:touches withEvent:event];
     
-    UIViewController *vc = [[CTMediator sharedInstance] fetchComponentAVCWithSource:@"ProjectA"];
-    [self.navigationController pushViewController:vc animated:YES];
+    [[CTMediator sharedInstance] presentDetailAFromSourceVC:self sourceId:@"76563214" completionHandler:^(NSDictionary *info) {
+        NSLog(@"%@", info);
+    }];
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

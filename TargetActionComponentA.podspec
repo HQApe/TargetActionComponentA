@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TargetActionComponentA'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'TargetActionComponentA.'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TargetActionComponentA，组件化模块A
+TargetActionComponentA，组件化模块A，正向和反向传值。
                        DESC
 
   s.homepage         = 'https://github.com/HQApe/TargetActionComponentA'

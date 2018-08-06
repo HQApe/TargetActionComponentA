@@ -1,6 +1,6 @@
 PODS:
   - CTMediator (18)
-  - TargetActionComponentA (0.1.0):
+  - TargetActionComponentA (0.2.0):
     - CTMediator
 
 DEPENDENCIES:
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CTMediator: 420e9d90f9f1fd740caf2238ed7ed64dc621c5b7
-  TargetActionComponentA: 3b891fed4fa37b3c2cc0a7c35e54ea1d0388f2d6
+  TargetActionComponentA: 396030a098f67312323d2af9851176f3afe47800
 
 PODFILE CHECKSUM: 1c826069fb3d6025653c88580a3ef03a9d46b436
 

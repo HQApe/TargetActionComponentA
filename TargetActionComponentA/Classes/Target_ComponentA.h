@@ -9,4 +9,5 @@
 
 @interface Target_ComponentA : NSObject
 - (UIViewController *)Action_fetchComponentAVC:(NSDictionary *)params;
+- (UIViewController *)Action_presentDetailA:(NSDictionary *)params;
 @end

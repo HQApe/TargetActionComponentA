@@ -7,6 +7,7 @@
 
 #import "Target_ComponentA.h"
 #import "TAEntreyAVC.h"
+#import "TAentryADetailVC.h"
 
 @implementation Target_ComponentA
 - (UIViewController *)Action_fetchComponentAVC:(NSDictionary *)params {
@@ -15,4 +16,12 @@
     viewController.entrySource = params[@"entrySouce"];
     return viewController;
 }
+
+- (UIViewController *)Action_presentDetailA:(NSDictionary *)params {
+    TAentryADetailVC *viewController = [[TAentryADetailVC alloc] init];
+    viewController.finishBlock = params[@"block"];
+    viewController.sourceId = params[@"sourceId"];
+    return viewController;
+}
+
 @end
