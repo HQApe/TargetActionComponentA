@@ -59,6 +59,7 @@
 {
     
     TAentryADetailVC *detailVC = [[TAentryADetailVC alloc] init];
+    detailVC.sourceId = [NSString stringWithFormat:@"092332%ld",indexPath.row];
     [self.navigationController pushViewController:detailVC animated:YES];
 }
 
